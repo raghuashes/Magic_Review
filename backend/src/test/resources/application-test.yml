@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/magicreview_test
+    username: magicreview
+    password: magicreview
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    enabled: false
+
+app:
+  jwt:
+    secret: "TestSecretKeyForTestingOnlyNeedsToBeAtLeast32CharsLong!!"
+    access-expiration-ms: 900000
+    refresh-expiration-ms: 604800000
+
+gemini:
+  api:
+    key: ""
+    model: gemini-1.5-flash

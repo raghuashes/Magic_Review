@@ -1,0 +1,27 @@
+# General
+.env
+*.log
+.DS_Store
+node_modules/
+dist/
+build/
+target/
+*.jar
+*.class
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Java / Maven
+.m2/
+*.iml
+
+# Environment secrets
+.env.local
+.env.production
+
+# Supabase / DB
+*.dump
+*.sql.backup
